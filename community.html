@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSwap - Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">BookSwap</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="marketplace.html">Marketplace</a>
+                <a href="community.html" class="active">Community</a>
+                <a href="map.html">Book Spots</a>
+                <a href="mypage.html">My Page</a>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="register.html" class="register-btn">Register</a>
+                <a href="#" class="logout-btn" style="display: none;">Logout</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Community Section -->
+    <section class="section-container" id="community">
+        <h2 class="section-title">Book Community</h2>
+        <div class="community-container">
+            <div class="community-sidebar">
+                <div class="community-stats">
+                    <h3>Community Stats</h3>
+                    <p>Active Members: 1,234</p>
+                    <p>Books Traded: 5,678</p>
+                </div>
+                <div class="community-topics">
+                    <h3>Popular Topics</h3>
+                    <ul>
+                        <li>Textbook Recommendations</li>
+                        <li>Study Tips</li>
+                        <li>Book Reviews</li>
+                    </ul>
+                </div>
+                <button class="new-post-button">Create New Post</button>
+            </div>
+            <div class="community-posts">
+                <div class="post-filters">
+                    <select class="filter-select">
+                        <option value="recent">Most Recent</option>
+                        <option value="popular">Most Popular</option>
+                        <option value="comments">Most Comments</option>
+                    </select>
+                    <input type="text" placeholder="Search posts..." class="search-input">
+                </div>
+                <div class="posts-list">
+                    <!-- Posts will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About BookSwap</h3>
+                <p>Your trusted platform for buying and selling used books within the student community.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="marketplace.html">Marketplace</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="map.html">Book Spots</a></li>
+                    <li><a href="mypage.html">My Page</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="mailto:support@bookswap.com">support@bookswap.com</a></li>
+                    <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BookSwap. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

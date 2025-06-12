@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page - BookSwap</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">BookSwap</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="marketplace.html">Marketplace</a>
+                <a href="community.html">Community</a>
+                <a href="map.html">Book Spots</a>
+                <a href="mypage.html" class="active">My Page</a>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="register.html" class="register-btn">Register</a>
+                <a href="#" class="logout-btn" style="display: none;">Logout</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="mypage-section">
+            <div class="mypage-container">
+                <div class="user-profile">
+                    <div class="profile-container">
+                        <div class="profile-header">
+                            <div class="profile-photo-container">
+                                <img src="images/default-profile.png" alt="Profile Photo" id="profilePhoto" class="profile-photo">
+                                <div class="photo-upload-overlay">
+                                    <label for="photoUpload" class="upload-btn">
+                                        <i class="fas fa-camera"></i>
+                                    </label>
+                                    <input type="file" id="photoUpload" accept="image/*" style="display: none;">
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <h2 id="userName">John Doe</h2>
+                                <p class="membership">Member since: <span id="joinDate">January 2024</span></p>
+                                <button class="edit-profile-btn">Edit Profile</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">25</span>
+                            <span class="stat-label">Books Listed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">Books Sold</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15</span>
+                            <span class="stat-label">Community Posts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-container">
+                    <div class="settings-section">
+                        <h3>Email Registration</h3>
+                        <div class="email-status">
+                            <p>Current Email: <span id="currentEmail">user@example.com</span></p>
+                            <button class="edit-email-btn">Change Email</button>
+                        </div>
+                        <div class="email-form" style="display: none;">
+                            <input type="email" id="newEmail" placeholder="Enter new email">
+                            <button class="save-email-btn">Save</button>
+                            <button class="cancel-email-btn">Cancel</button>
+                        </div>
+                    </div>
+
+                    <div class="settings-section">
+                        <h3>Student Verification</h3>
+                        <div class="verification-status">
+                            <p>Status: <span id="verificationStatus">Not Verified</span></p>
+                            <button class="verify-student-btn">Verify Student Status</button>
+                        </div>
+                        <div class="verification-form" style="display: none;">
+                            <input type="text" id="studentId" placeholder="Enter Hongik University Student ID">
+                            <input type="file" id="studentIdCard" accept="image/*">
+                            <button class="submit-verification-btn">Submit</button>
+                            <button class="cancel-verification-btn">Cancel</button>
+                        </div>
+                    </div>
+
+                    <div class="settings-section">
+                        <h3>My Locations</h3>
+                        <div class="location-list">
+                            <div class="current-location">
+                                <h4>Current Location</h4>
+                                <p id="currentLocation">Not set</p>
+                            </div>
+                            <div class="saved-locations">
+                                <h4>Saved Locations</h4>
+                                <ul id="locationList"></ul>
+                                <button class="add-location-btn">Add New Location</button>
+                            </div>
+                        </div>
+                        <div class="location-form" style="display: none;">
+                            <input type="text" id="locationName" placeholder="Location Name">
+                            <input type="text" id="locationAddress" placeholder="Address">
+                            <button class="save-location-btn">Save Location</button>
+                            <button class="cancel-location-btn">Cancel</button>
+                        </div>
+                    </div>
+
+                    <div class="settings-section">
+                        <h3>Security</h3>
+                        <button class="change-password-btn">Change Password</button>
+                        <div class="password-form" style="display: none;">
+                            <input type="password" id="currentPassword" placeholder="Current Password">
+                            <input type="password" id="newPassword" placeholder="New Password">
+                            <input type="password" id="confirmPassword" placeholder="Confirm New Password">
+                            <button class="save-password-btn">Save Password</button>
+                            <button class="cancel-password-btn">Cancel</button>
+                        </div>
+                    </div>
+
+                    <div class="settings-section danger-zone">
+                        <h3>Danger Zone</h3>
+                        <button class="delete-account-btn">Delete Account</button>
+                        <div class="delete-confirmation" style="display: none;">
+                            <p>Are you sure you want to delete your account? This action cannot be undone.</p>
+                            <input type="password" id="deletePassword" placeholder="Enter your password to confirm">
+                            <button class="confirm-delete-btn">Confirm Delete</button>
+                            <button class="cancel-delete-btn">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BookSwap</h3>
+                <p>Your trusted platform for trading used books and connecting with fellow readers.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="marketplace.html">Marketplace</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="map.html">Book Spots</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@bookswap.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BookSwap. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
