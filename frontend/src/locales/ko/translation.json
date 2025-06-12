@@ -1,0 +1,14 @@
+{
+  "title": "홍책방",
+  "signup": "회원가입",
+  "idPlaceholder": "아이디를 입력하세요.",
+  "idCheck": "중복확인",
+  "emailPlaceholder": "이메일을 입력하세요.",
+  "pwPlaceholder": "비밀번호를 입력하세요.",
+  "pw2Placeholder": "비밀번호를 다시 입력하세요.",
+  "submit": "회원가입",
+  "social": "소셜 계정으로 회원가입",
+  "naver": "네이버",
+  "kakao": "카카오",
+  "google": "구글"
+} 

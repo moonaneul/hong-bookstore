@@ -1,0 +1,14 @@
+{
+  "title": "ホンチェッパン",
+  "signup": "新規登録",
+  "idPlaceholder": "IDを入力してください。",
+  "idCheck": "重複確認",
+  "emailPlaceholder": "メールアドレスを入力してください。",
+  "pwPlaceholder": "パスワードを入力してください。",
+  "pw2Placeholder": "パスワードを再入力してください。",
+  "submit": "新規登録",
+  "social": "ソーシャルアカウントで登録",
+  "naver": "ネイバー",
+  "kakao": "カカオ",
+  "google": "グーグル"
+} 

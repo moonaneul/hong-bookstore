@@ -1,0 +1,14 @@
+{
+  "title": "HongBookstore",
+  "signup": "Sign Up",
+  "idPlaceholder": "Enter your ID",
+  "idCheck": "Check",
+  "emailPlaceholder": "Enter your email",
+  "pwPlaceholder": "Enter your password",
+  "pw2Placeholder": "Re-enter your password",
+  "submit": "Sign Up",
+  "social": "Sign up with social account",
+  "naver": "Naver",
+  "kakao": "Kakao",
+  "google": "Google"
+} 
