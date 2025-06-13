@@ -714,4 +714,25 @@ function loadSavedData() {
 document.addEventListener('DOMContentLoaded', () => {
     renderBooks(books);
     addMessage('Hello! How can I help you with school information?');
+});
+
+// Mobile menu functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (navLinks && navLinks.classList.contains('active') && 
+            !navLinks.contains(e.target) && 
+            !hamburger.contains(e.target)) {
+            navLinks.classList.remove('active');
+        }
+    });
 }); 
